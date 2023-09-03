@@ -27,7 +27,7 @@ TumorDetectAI is a web application that utilizes artificial intelligence to dete
 1. Clone this repository to your local machine:
 
    ```sh
-   git clone https://github.com/
+   git clone https://github.com/MahtabRanjbar/TumorDetectAI.git
    ```
 
 2. Navigate to the project directory:
