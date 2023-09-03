@@ -22,15 +22,17 @@ class TumorDetectionModel:
         # Convert the image to an array
         img_array = np.array(image)
         # Normalize the pixel values
+        # img_array = img_array / 255.0
         # Expand the dimensions of the array
         img_array = np.expand_dims(img_array, axis=0)
         # Return the preprocessed image
-        return image
+        return img_array
 
     def get_prediction_label(self, prediction):
         print(prediction)
         pred = np.argmax(prediction, axis=1)
         print(pred)
+        print(prediction)
         if pred == 0:
             return "No Tumor"
         else:
