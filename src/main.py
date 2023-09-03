@@ -10,8 +10,9 @@ from tensorflow.keras.callbacks import EarlyStopping
 from config import Config
 from evaluation import (display_confusion_matrix, evaluate_model,
                         plot_training_history, save_classification_report)
-from preprocess import (create_gen, create_image_dataframe, create_model,
+from preprocess import (create_gen, create_image_dataframe,
                         generate_data_paths_labels)
+from model import create_model
 
 
 def main():
@@ -105,3 +106,7 @@ def main():
     save_path = os.path.join(Config.model_dir, "best_model.h5")
     model.save(save_path)
     print(f"Best model saved at: {save_path}")
+
+
+if __name__ == 'main':
+    main()
