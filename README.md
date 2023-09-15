@@ -44,22 +44,22 @@ TumorDetectAI is a web application that utilizes artificial intelligence to dete
     ```
 
 ## Usage
-
-1. Start the app by running the following command in your terminal:
+1. download pretrained model from [here](https://drive.google.com/drive/folders/1-BRhTeD6o9X4ESZVt4iOavjsfFnOoT_M?usp=sharing) and put in `saved_models` folder
+2. Start the app by running the following command in your terminal:
     ```sh
     streamlit run src/app.py
     ```
 
-2. Open your web browser and navigate to `http://localhost:8501`. This should open the app in your browser.
+3. Open your web browser and navigate to `http://localhost:8501`. This should open the app in your browser.
 
-3. Upload a Brain MRI image to the app and click the "Predict" button to see the model's prediction. you can use my [sample_images](/sample_data/)
+4. Upload a Brain MRI image to the app and click the "Predict" button to see the model's prediction. you can use my [sample_images](/sample_data/)
 
-4. If you want to retrain the model, you can execute the following command:
+5. If you want to retrain the model, you can execute the following command:
     ```sh
     python src/main.py
     ```
     consider to first download the data and put in data folder as it is said [here](data/README.md)
-5. for ease of use and not installing all neccessary packages and having no conflict, you can run the  [notebook](notebooks/braintumordetection.ipynb) of project
+6. for ease of use and not installing all neccessary packages and having no conflict, you can run the  [notebook](notebooks/braintumordetection.ipynb) of project
 
 ## Dataset
 The Brain Tumor Detection dataset from [Kaggle](https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection) consists of brain MRI images collected for the purpose of brain tumor detection. The dataset has been split into three subsets: train set, validation set, and test set. The sizes of each subset are as follows:
@@ -75,7 +75,7 @@ The Brain Tumor Detection dataset from [Kaggle](https://www.kaggle.com/datasets/
 
 The model architecture is based on the Resnet50 model, which is a powerful convolutional neural network architecture known for its efficiency and accuracy. In addition to the Resnet base model, additional convolutional layers and fully connected layers have been added to enhance the model's ability to detect brain tumors.
 
-The model is pretrained and saved for ease of use. You can find the pretrained model in the [model](model/) folder. Instead of retraining the model, you can directly use this pretrained model for your brain tumor detection tasks.
+The model is pretrained and saved for ease of use. You can find the pretrained model in the [here](https://drive.google.com/drive/folders/1-BRhTeD6o9X4ESZVt4iOavjsfFnOoT_M?usp=sharing). Instead of retraining the model, you can directly use this pretrained model for your brain tumor detection tasks.
 
 The model is trained using the Adam optimizer, which is a popular choice for deep learning tasks. Adam adjusts the model's weights during training to minimize the loss function and improve the model's performance.
 
